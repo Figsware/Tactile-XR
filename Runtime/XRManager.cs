@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Tactile.Core.Utility.Singleton;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,7 +12,7 @@ namespace Tactile.XR
     /// control when to enable XR, such as for implementing a toggle between a desktop and XR mode.
     /// </summary>
     [AddComponentMenu("Tactile/XR/XR Manager")]
-    public class XRManager : MonoBehaviour
+    public class XRManager : SingletonMonoBehaviour<XRManager>
     {
         [Tooltip("Whether XR is currently enabled.")] [SerializeField]
         private bool isXREnabled = true;
@@ -24,11 +25,12 @@ namespace Tactile.XR
 #if UNITY_EDITOR
 
             var mode = GetXROverrideMode();
-            if (mode == XROverrideMode.ForceOff)
-                isXREnabled = false;
-
-            if (mode == XROverrideMode.ForceOn)
-                isXREnabled = true;
+            isXREnabled = mode switch
+            {
+                XROverrideMode.ForceOff => false,
+                XROverrideMode.ForceOn => true,
+                _ => isXREnabled
+            };
 
 #endif
 

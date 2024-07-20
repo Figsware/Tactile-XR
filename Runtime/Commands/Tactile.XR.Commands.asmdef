@@ -1,0 +1,26 @@
+{
+    "name": "Tactile XR Commands",
+    "rootNamespace": "Tactile.XR",
+    "references": [
+        "GUID:c30243379fb0c4cc39b4524bf3c3d271",
+        "GUID:5ca9e8528fd2e45d6893b1134ed5efc3",
+        "GUID:ebdd361761c905f479c01d8bcc328ee2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "TACTILE_CONSOLE"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.figsware.tactile.console",
+            "expression": "0.1.2",
+            "define": "TACTILE_CONSOLE"
+        }
+    ],
+    "noEngineReferences": false
+}

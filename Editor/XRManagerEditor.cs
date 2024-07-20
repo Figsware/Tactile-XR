@@ -1,4 +1,5 @@
 ﻿using System;
+using Tactile.Core.Editor.Utility;
 using UnityEditor;
 using Tactile.XR;
 using UnityEngine;
@@ -26,12 +27,12 @@ namespace Tactile.XR.Editor
 
             GUILayout.BeginHorizontal();
             GUILayout.Label("XR Startup Override: ");
-            // var mode = currentMode.ToolbarFromEnum();
-            // if (mode != currentMode)
-            // {
-            //     XRManager.SetXROverrideMode(mode);
-            //     currentMode = mode;
-            // }
+            var mode = currentMode.ToolbarFromEnum();
+            if (mode != currentMode)
+            {
+                XRManager.SetXROverrideMode(mode);
+                currentMode = mode;
+            }
             GUILayout.EndHorizontal();
             
             GUILayout.EndVertical();

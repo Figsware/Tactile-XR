@@ -2,7 +2,9 @@
     "name": "Figsware.Tactile.XR.Editor",
     "rootNamespace": "Tactile.XR",
     "references": [
-        "GUID:5ca9e8528fd2e45d6893b1134ed5efc3"
+        "GUID:5ca9e8528fd2e45d6893b1134ed5efc3",
+        "GUID:c30243379fb0c4cc39b4524bf3c3d271",
+        "GUID:9b295871b8b30084981f4e6e9f838dc8"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
