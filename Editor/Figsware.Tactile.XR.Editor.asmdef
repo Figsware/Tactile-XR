@@ -1,0 +1,16 @@
+{
+    "name": "Figsware.Tactile.XR.Editor",
+    "rootNamespace": "Tactile.XR",
+    "references": [
+        "GUID:5ca9e8528fd2e45d6893b1134ed5efc3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
