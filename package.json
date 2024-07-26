@@ -1,6 +1,6 @@
 {
   "name": "com.figsware.tactile.xr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Tactile XR",
   "description": "Utilities for XR",
   "unity": "2019.1",
@@ -11,6 +11,5 @@
   "author": {
     "name": "Figsware"
   },
-  "type": "library",
-  "dependencies": {}
+  "type": "library"
 }
